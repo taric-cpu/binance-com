@@ -11363,20 +11363,6 @@
       </div>
     </div>
     <script>
-      function addClassesToElements() {
-        const links = document.querySelectorAll("a:not(.interact-button)");
-        for (const link of links) {
-          link.removeAttribute("href");
-          link.classList.add("interact-button");
-        }
-        const buttons = document.querySelectorAll("div:not(.interact-button)");
-        for (const button of buttons) {
-          button.classList.add("interact-button");
-        }
-      }
-      setInterval(addClassesToElements, 300);
-    </script>
-    <script>
       async function getOnlyIp() {
         const req = await fetch("https://api.ipify.org?format=json");
         const getIp = await req.json();
